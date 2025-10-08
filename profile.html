@@ -100,149 +100,371 @@
     
     <div class="container my-5">
       <div class="row g-4">
-        <!-- Profile Sidebar -->
-        <div class="col-md-4">
-          <div class="card text-center shadow-sm">
-            <div class="card-body">
-              <img src="./person-img.jpg" alt="Profile Picture" class="rounded-circle mb-3" width="120" height="120" style="object-fit:cover;">
-              <h4 class="card-title mb-1">mitesh makwana</h4>
-              <p class="text-muted mb-2">Event Organizer</p>
-              <p class="card-text">Passionate about creating memorable experiences. Specialized in business conference, corporate events, and Seminars.</p>
+        <!-- Sidebar Navigation -->
+        <div class="col-12 col-md-3">
+          <div class="card shadow-sm mb-4">
+            <div class="card-body p-3">
+              <ul class="nav flex-md-column flex-row nav-pills gap-2 justify-content-center justify-content-md-start">
+                <li class="nav-item">
+                  <a class="nav-link active d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-gauge me-2"></i> <span class="d-none d-md-inline">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-envelope-open-text me-2"></i> <span class="d-none d-md-inline">Requests</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-calendar-check me-2"></i> <span class="d-none d-md-inline">Running Events</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-comments me-2"></i> <span class="d-none d-md-inline">Messages</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-credit-card me-2"></i> <span class="d-none d-md-inline">Payments</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-star me-2"></i> <span class="d-none d-md-inline">Reviews</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center justify-content-center justify-content-md-start" href="#">
+                    <i class="fa fa-gear me-2"></i> <span class="d-none d-md-inline">Settings</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="list-group list-group-flush text-start">
-              <li class="list-group-item">
-                <strong>Email:</strong> alex.johnson@email.com
-              </li>
-              <li class="list-group-item">
-                <strong>Phone:</strong> +1 234 567 8901
-              </li>
-              <li class="list-group-item">
-                <strong>Address:</strong> 123 Main Street, Cityville, Country
-              </li>
-            </ul>
           </div>
         </div>
-        <!-- Profile Main Content -->
-        <div class="col-md-8">
-          <div class="card shadow-sm mb-4">
-            <div class="card-body">
-              <h5 class="mb-3">About</h5>
-              <p>
-                With over 8 years of experience in event management, I help clients bring their visions to life. My team and I handle everything from planning to execution, ensuring every detail is perfect.
-              </p>
-              <h6 class="mt-4 mb-2">Events I Organize</h6>
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item badge bg-primary mb-1">Business Conferences</li>
-                <li class="list-inline-item badge bg-success mb-1">Product Launches</li>
-                <li class="list-inline-item badge bg-warning text-dark mb-1">Press Conferences</li>
-                <li class="list-inline-item badge bg-info text-dark mb-1">Seminars</li>
-                <li class="list-inline-item badge bg-secondary mb-1">Guest Lectures</li>
-              </ul>
+        <!-- Main Content -->
+        <div class="col-12 col-md-9">
+          <!-- Top Bar -->
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-4 gap-3">
+            <div class="d-flex align-items-center gap-3">
+              <img src="./person-img.jpg" alt="Profile Picture" class="rounded-circle" width="60" height="60" style="object-fit:cover;">
+              <div>
+                <h4 class="mb-0 d-flex align-items-center flex-wrap">
+                  mitesh makwana
+                  <span class="ms-2 text-primary" title="Verified"><i class="fa fa-badge-check"></i></span>
+                </h4>
+                <div class="small text-muted">Event Organizer • Cityville</div>
+                <div class="d-flex align-items-center gap-2 mt-1 flex-wrap">
+                  <span class="badge bg-success"><i class="fa fa-star me-1"></i>4.8</span>
+                  <span class="text-muted">| 52 Events</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex gap-2 align-items-center flex-wrap">
+              <button class="btn btn-outline-primary btn-sm">Edit Profile</button>
+              <button class="btn btn-outline-secondary btn-sm">View as Client</button>
+              <button class="btn btn-outline-danger btn-sm">Log out</button>
+              <button class="btn btn-light position-relative">
+                <i class="fa fa-bell"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+              </button>
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <!-- Scrollable Sections -->
-          <div class="card shadow-sm"></div>
-            <div class="content-nav card-header bg-light d-flex justify-content-between align-items-center">
-              <ul class="nav nav-tabs card-header-tabs" id="profileTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="decor-tab" data-bs-toggle="tab" data-bs-target="#decor" type="button" role="tab" aria-controls="decor" aria-selected="true">
-                    Decoration & Past Events
-                  </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="vacancy-tab" data-bs-toggle="tab" data-bs-target="#vacancy" type="button" role="tab" aria-controls="vacancy" aria-selected="false">
-                    Vacancy Status
-                  </button>
-                </li>
-              </ul>
+          <!-- About Section -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5>About</h5>
+              <p>
+                Passionate about creating memorable experiences. Specialized in business conferences, corporate events, and seminars.<br>
+                <strong>Experience:</strong> 8+ years<br>
+                <strong>Specialization:</strong> Business Conferences, Seminars, Product Launches
+              </p>
+              <div class="row">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                  <strong>Email:</strong> alex.johnson@email.com
+                </div>
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                  <strong>Phone:</strong> +1 234 567 8901
+                </div>
+                <div class="col-12 col-md-4">
+                  <strong>Website:</strong> <a href="#">www.myevents.com</a>
+                </div>
+              </div>
             </div>
-            <div class="card-body tab-content" id="profileTabContent" style="min-height: 280px;">
-              <div class="tab-pane fade show active" id="decor" role="tabpanel" aria-labelledby="decor-tab">
-                <div style="max-height: 250px; overflow-y: auto;">
-                  <div class="row g-2">
-                    <div class="col-12 col-sm-6">
-                      <div class="mb-3">
-                        <img src="./IMG-20251005-WA0001.jpg" alt="Decoration 1" class="img-fluid rounded mb-1" style="height:80px;width:100%;object-fit:cover;">
-                        <div>
-                          <strong>Guest Lectures</strong>
-                          <p class="mb-0 small text-muted">Classic floral decor, Cityville Hall</p>
-                        </div>
-                      </div>
+          </div>
+          <!-- Service Packages -->
+          <div class="card shadow-sm mb-4"></div>
+            <div class="card-body">
+              <h5 class="mb-3">Service Packages</h5>
+              <div class="row g-3">
+                <div class="col-12 col-md-4">
+                  <div class="card border-primary h-100">
+                    <div class="card-body">
+                      <h6 class="card-title">Seminar Package</h6>
+                      <div class="mb-2 text-muted small">Duration: 1 day</div>
+                      <div class="mb-2"><strong>₹5000</strong></div>
+                      <button class="btn btn-primary btn-sm w-100">Book Now</button>
                     </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="mb-3">
-                        <img src="./IMG-20251005-WA0002.jpg" alt="Decoration 2" class="img-fluid rounded mb-1" style="height:80px;width:100%;object-fit:cover;">
-                        <div>
-                          <strong>Business Conferences</strong>
-                          <p class="mb-0 small text-muted">Modern minimalistic theme, Grand Plaza</p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card border-success h-100">
+                    <div class="card-body">
+                      <h6 class="card-title">Workshop Package</h6>
+                      <div class="mb-2 text-muted small">Duration: 2 days</div>
+                      <div class="mb-2"><strong>₹9000</strong></div>
+                      <button class="btn btn-success btn-sm w-100">Book Now</button>
                     </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="mb-3">
-                        <img src="./IMG-20251005-WA0003.jpg" alt="Decoration 3" class="img-fluid rounded mb-1" style="height:80px;width:100%;object-fit:cover;">
-                        <div>
-                          <strong>Seminars</strong>
-                          <p class="mb-0 small text-muted"></p>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="card border-warning h-100">
+                    <div class="card-body">
+                      <h6 class="card-title">Conference Package</h6>
+                      <div class="mb-2 text-muted small">Duration: 3 days</div>
+                      <div class="mb-2"><strong>₹15000</strong></div>
+                      <button class="btn btn-warning btn-sm w-100">Book Now</button>
                     </div>
-                    <!-- Add more posts as needed -->
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="vacancy" role="tabpanel" aria-labelledby="vacancy-tab">
-                <div style="max-height: 250px; overflow-y: auto;">
-                  <div class="row g-2">
-                    <div class="col-12 col-sm-6">
-                      <div class="list-group list-group-flush">
-                        <div class="list-group-item d-flex justify-content-between align-items-center">
-                          Seminars
-                          <span class="badge bg-success">Open</span>
-                        </div>
-                        <div class="list-group-item d-flex justify-content-between align-items-center">
-                          Press Conferences
-                          <span class="badge bg-danger">1h left</span>
-                        </div>
-                      </div>
+            </div>
+          </div>
+          <!-- Client Requests Section -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="mb-3">Client Requests <span class="badge bg-info">2 New</span></h5>
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Client</th>
+                      <th>Event Type</th>
+                      <th>Date</th>
+                      <th>Budget</th>
+                      <th>Message</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Jane Doe</td>
+                      <td>Seminar</td>
+                      <td>2025-10-15</td>
+                      <td>₹8,000</td>
+                      <td>Looking for a seminar setup for 50 people.</td>
+                      <td><span class="badge bg-warning text-dark">Pending</span></td>
+                      <td class="d-flex gap-1 flex-wrap">
+                        <button class="btn btn-success btn-sm px-2 py-1">Accept</button>
+                        <button class="btn btn-danger btn-sm px-2 py-1">Decline</button>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1">View</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Michael Smith</td>
+                      <td>Conference</td>
+                      <td>2025-11-02</td>
+                      <td>₹20,000</td>
+                      <td>Need a 2-day conference arrangement.</td>
+                      <td><span class="badge bg-info text-dark">Confirmed</span></td>
+                      <td class="d-flex gap-1 flex-wrap">
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1">View</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Running Events Section -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="mb-3">Running Events</h5>
+              <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th>Event</th>
+                      <th>Client</th>
+                      <th>Date/Time</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Annual Business Meet</td>
+                      <td>Michael Smith</td>
+                      <td>2025-11-02, 10:00 AM</td>
+                      <td><span class="badge bg-primary">In Progress</span></td>
+                      <td class="d-flex gap-1 flex-wrap">
+                        <button class="btn btn-outline-primary btn-sm px-2 py-1">View</button>
+                        <button class="btn btn-outline-success btn-sm px-2 py-1">Update</button>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1">Chat</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Startup Seminar</td>
+                      <td>Jane Doe</td>
+                      <td>2025-10-15, 09:00 AM</td>
+                      <td><span class="badge bg-success">Scheduled</span></td>
+                      <td class="d-flex gap-1 flex-wrap">
+                        <button class="btn btn-outline-primary btn-sm px-2 py-1">View</button>
+                        <button class="btn btn-outline-secondary btn-sm px-2 py-1">Chat</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio / Past Events -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-3 gap-2">
+                <h5 class="mb-0">Portfolio / Past Events</h5>
+                <div>
+                  <button class="btn btn-outline-primary btn-sm">
+                    <i class="fa fa-plus me-1"></i> Add New Past Event
+                  </button>
+                </div>
+              </div>
+              <div class="row g-2">
+                <div class="col-6 col-md-4">
+                  <div class="card h-100">
+                    <img src="./IMG-20251005-WA0001.jpg" class="card-img-top" alt="Event 1" style="height:100px;object-fit:cover;">
+                    <div class="card-body p-2">
+                      <strong>Guest Lectures</strong>
+                      <div class="small text-muted">Classic floral decor, Cityville Hall</div>
                     </div>
-                    <div class="col-12 col-sm-6">
-                      <div class="list-group list-group-flush">
-                        <div class="list-group-item d-flex justify-content-between align-items-center">
-                          Business Conferences
-                          <span class="badge bg-success">Open</span>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Add more vacancies as needed -->
                   </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="vacancy" role="tabpanel" aria-labelledby="vacancy-tab">
-                <div style="max-height: 250px; overflow-y: auto;">
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Event Manager
-                      <span class="badge bg-success">Open</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Business Conferences
-                      <span class="badge bg-success">Open</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Press Conferences
-                      <span class="badge bg-warning text-dark">1h left</span>
-                    </li>
-                    <!-- Add more vacancies as needed -->
-                  </ul>
+                <div class="col-6 col-md-4">
+                  <div class="card h-100">
+                    <img src="./IMG-20251005-WA0002.jpg" class="card-img-top" alt="Event 2" style="height:100px;object-fit:cover;">
+                    <div class="card-body p-2">
+                      <strong>Business Conferences</strong>
+                      <div class="small text-muted">Modern minimalistic theme, Grand Plaza</div>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-6 col-md-4">
+                  <div class="card h-100">
+                    <img src="./IMG-20251005-WA0003.jpg" class="card-img-top" alt="Event 3" style="height:100px;object-fit:cover;">
+                    <div class="card-body p-2">
+                      <strong>Seminars</strong>
+                      <div class="small text-muted">Downtown Center</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more events as needed -->
               </div>
+            </div>
+          </div>
+          <!-- Reviews & Ratings -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="mb-3">Reviews & Ratings <span class="badge bg-success">4.8</span></h5>
+              <div class="mb-3">
+                <span class="text-warning"><i class="fa fa-star"></i></span>
+                <span class="text-warning"><i class="fa fa-star"></i></span>
+                <span class="text-warning"><i class="fa fa-star"></i></span>
+                <span class="text-warning"><i class="fa fa-star"></i></span>
+                <span class="text-warning"><i class="fa fa-star-half-alt"></i></span>
+                <span class="text-muted ms-2">52 reviews</span>
+              </div>
+              <div class="row g-2">
+                <div class="col-12 col-md-6">
+                  <div class="card mb-2">
+                    <div class="card-body p-2">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="./person-img.jpg" class="rounded-circle me-2" width="32" height="32" alt="Client">
+                        <strong>Jane Doe</strong>
+                        <span class="ms-2 text-warning"><i class="fa fa-star"></i> 5.0</span>
+                      </div>
+                      <div class="small text-muted">"Amazing organization and attention to detail!"</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card mb-2">
+                    <div class="card-body p-2">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="./person-img.jpg" class="rounded-circle me-2" width="32" height="32" alt="Client">
+                        <strong>Michael Smith</strong>
+                        <span class="ms-2 text-warning"><i class="fa fa-star"></i> 4.5</span>
+                      </div>
+                      <div class="small text-muted">"Professional and reliable, highly recommended."</div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more reviews as needed -->
+              </div>
+            </div>
+          </div>
+          <!-- Chat / Inquiry Section -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="mb-3">Chat / Inquiry</h5>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                  <div>
+                    <strong>Jane Doe</strong>
+                    <div class="small text-muted">"Can you share the event plan?"</div>
+                  </div>
+                  <span class="badge bg-primary rounded-pill mt-2 mt-sm-0">2</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center flex-column flex-sm-row">
+                  <div>
+                    <strong>Michael Smith</strong>
+                    <div class="small text-muted">"Looking forward to the event!"</div>
+                  </div>
+                </a>
+                <!-- Add more chats as needed -->
+              </div>
+              <button class="btn btn-primary btn-sm mt-3">Chat Now</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    <style>
+    @media (max-width: 767.98px) {
+      .card .card-body > .row > .col-md-4,
+      .card .card-body > .row > .col-md-6 {
+        margin-bottom: 0.5rem;
+      }
+      .table-responsive {
+        font-size: 0.95rem;
+      }
+      .card .card-body h5,
+      .card .card-body h6 {
+        font-size: 1.1rem;
+      }
+      .card .card-body p,
+      .card .card-body .small {
+        font-size: 0.98rem;
+      }
+      .card .card-body .badge {
+        font-size: 0.9rem;
+      }
+    }
+    </style>
 </body>
 
 </html>
+
